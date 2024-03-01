@@ -30,6 +30,18 @@ async function onSearchSubmit(event) {
   hideLoadBtn();
   toggleLoader();
 
+    
+    
+
+
+     const queryValue = event.target.query.value.trim();
+  if (!queryValue) {
+    showError('Please enter a search query.');
+    toggleLoader();
+    return;
+  }
+
+
 
   try {
     const data = await pixabayApi.getImages(event.target.query.value);
