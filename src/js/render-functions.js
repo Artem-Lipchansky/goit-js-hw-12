@@ -1,4 +1,4 @@
-function templateCard({
+export function templateCard({
   webformatURL,
   largeImageURL,
   tags,

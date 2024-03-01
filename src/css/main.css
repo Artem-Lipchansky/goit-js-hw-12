@@ -40,6 +40,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px 12px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -91,4 +92,21 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+
+
+.load-btn {
+    display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 110px;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: none;
+        background-color: #4e75ff;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 16px;
+        font-family: Montserrat, sans-serif;
 }
