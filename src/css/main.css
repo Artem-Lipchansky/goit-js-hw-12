@@ -60,24 +60,39 @@
 }
 
 .loader {
-    width: 250px;
-    height: 2.8px;
-    display: block;
     margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+        width: 48px;
+        height: 48px;
+        border: 5px solid #8e8e8e;
+        border-bottom-color: #02f;
+        border-radius: 50%;
+        display: block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
 }
 
 .loader::after {
-    content: '';
-    width: 64px;
-    height: 2.8px;
-    background: rgb(0, 0, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    animation: hitZak 0.6s ease-in-out infinite alternate;
+        position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            border: 0;
+            padding: 0;
+             white-space: nowrap; 
+             clip-path: inset(100%); 
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .hidden {
